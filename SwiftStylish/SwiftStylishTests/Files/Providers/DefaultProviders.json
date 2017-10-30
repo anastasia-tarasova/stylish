@@ -292,7 +292,7 @@
         {
             "font":
             {
-                "name": "ArialMT",
+                "name": "system",
                 "size": 12,
                 "weight": "bold",
                 "descriptor":{

@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "SwiftStylish/**/*.swift"
+  s.source_files  = "SwiftStylish/SwiftStylish/**/*.swift"
   s.exclude_files = ""
 
 
