@@ -361,7 +361,7 @@ extension StyleValue
 
 extension StyleValue
 {
-    func toImage() throws -> UIImage?
+    func toImage(existingImage: UIImage? = nil) throws -> UIImage?
     {
             if let stringValue = self.value as? String
             {
@@ -372,7 +372,23 @@ extension StyleValue
             
             func _generate(_ params: Params) throws -> UIImage?
             {
-                if let named = params["named"] as? String
+                if let color = params["colored"] as? String
+                {
+                    var image: UIImage?
+                    
+                    if let named = params["named"] as? String
+                    {
+                        image = try self.image(byNamed: named)
+                    }
+                    
+                    guard let imageToColor = image ?? existingImage else
+                    {
+                       throw StyleValueError.missingRequiredParameter(name: "named or object's existing image", forTypeValue: "Image")
+                    }
+                    
+                    return try self.image(imageToColor, colored: color)
+                }
+                else if let named = params["named"] as? String
                 {
                     return try self.image(byNamed: named)
                 }
@@ -414,6 +430,33 @@ extension StyleValue
             }
             
             return try _modify(image)
+    }
+    
+    private func image(_ image: UIImage, colored colorString: String) throws -> UIImage?
+    {
+        UIGraphicsBeginImageContextWithOptions(image.size, false, image.scale)
+        let colorValue = StyleValue(value: colorString, bundle: self.bundle, variables: self.variables)
+        let color = try colorValue.toColor()
+        
+        guard let context = UIGraphicsGetCurrentContext(),
+            let cgImage = image.cgImage else
+        {
+            return image
+        }
+        
+        context.translateBy(x: 0, y: image.size.height)
+        context.scaleBy(x: 1.0, y: -1.0)
+        context.setBlendMode(CGBlendMode.normal)
+        let rect: CGRect = CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height)
+        context.clip(to: rect, mask: cgImage)
+        color.setFill()
+        context.fill(rect)
+        guard let newImage: UIImage = UIGraphicsGetImageFromCurrentImageContext() else
+        {
+            return image
+        }
+        UIGraphicsEndImageContext()
+        return newImage
     }
     
     private func image(fromColor color: String, w: CGFloat, h: CGFloat) throws -> UIImage?

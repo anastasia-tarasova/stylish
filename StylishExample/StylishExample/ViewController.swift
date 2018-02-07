@@ -11,7 +11,10 @@ import SwiftStylish
 
 class ViewController: UIViewController
 {
-
+    @IBOutlet weak var topButton: UIButton!
+    
+    @IBOutlet weak var bottomButton: UIButton!
+    
     @IBOutlet weak var labelWithSystemFont: UILabel!
     
     @IBOutlet weak var labelWithCustomFont: UILabel!
@@ -23,6 +26,14 @@ class ViewController: UIViewController
         
          self.labelWithCustomFont.applyStyleClass(byName: ".fontWithDescriptor", filename: "FontStyles")
          self.labelWithSystemFont.applyStyleClass(byName: ".systemFontWithDescriptor", filename: "FontStyles")
+        
+        self.topButton.applyStyleClass(byName: ".coloredStaticImageButton", filename: "ImageStyles")
+        
+        let image = UIImage(named: "confirm")
+        self.bottomButton.setImage(image, for: .normal)
+        self.bottomButton.setImage(image, for: .selected)
+        self.bottomButton.setImage(image, for: .highlighted)
+        self.bottomButton.applyStyleClass(byName: ".coloredDynamicImageButton", filename: "ImageStyles")
     }
 
     override func didReceiveMemoryWarning()

@@ -1,0 +1,48 @@
+{
+    "@classes": {
+        ".coloredDynamicImageButton": {
+            "@state:normal": {
+                "image": {
+                    "colored": "system_blue",
+                    "rendering-mode": "always-original"
+                }
+            },
+            "@state:highlighted": {
+                "image": {
+                    "colored": "system_blue_pressed",
+                    "rendering-mode": "always-original"
+                }
+            },
+            "@state:disabled": {
+                "image": {
+                    "colored": "system_blue_pressed",
+                    "rendering-mode": "always-original"
+                }
+            }
+        },
+        
+        ".coloredStaticImageButton": {
+            "@state:normal": {
+                "image": {
+                    "named": "info",
+                    "colored": "system_blue",
+                    "rendering-mode": "always-original"
+                }
+            },
+            "@state:highlighted": {
+                "image": {
+                    "named": "info",
+                    "colored": "system_blue_pressed",
+                    "rendering-mode": "always-original"
+                }
+            },
+            "@state:disabled": {
+                "image": {
+                    "named": "info",
+                    "colored": "system_blue_pressed",
+                    "rendering-mode": "always-original"
+                }
+            }
+        }
+    }
+}

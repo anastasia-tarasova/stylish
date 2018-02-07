@@ -13,9 +13,11 @@
 		5D13F2E21FA7646F00E47606 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D13F2E11FA7646F00E47606 /* Assets.xcassets */; };
 		5D13F2E51FA7646F00E47606 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D13F2E31FA7646F00E47606 /* LaunchScreen.storyboard */; };
 		5D13F2F01FA7647000E47606 /* StylishExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D13F2EF1FA7647000E47606 /* StylishExampleTests.swift */; };
+		5D3DBA7A202B368700A69AF2 /* ImageStyles.json in Resources */ = {isa = PBXBuildFile; fileRef = 5D3DBA79202B368600A69AF2 /* ImageStyles.json */; };
+		5D3DBA7C202B389A00A69AF2 /* Variables.json in Resources */ = {isa = PBXBuildFile; fileRef = 5D3DBA7B202B389A00A69AF2 /* Variables.json */; };
+		5D3DBA7E202B3F2400A69AF2 /* SwiftStylish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D3DBA7D202B3F2400A69AF2 /* SwiftStylish.framework */; };
+		5D3DBA7F202B3F2400A69AF2 /* SwiftStylish.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D3DBA7D202B3F2400A69AF2 /* SwiftStylish.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5DD1134C1FA7663800ABC2D0 /* FontStyles.json in Resources */ = {isa = PBXBuildFile; fileRef = 5DD1134B1FA7663800ABC2D0 /* FontStyles.json */; };
-		5DD1136A1FA76C3400ABC2D0 /* SwiftStylish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD1135B1FA76A8000ABC2D0 /* SwiftStylish.framework */; };
-		5DD1136B1FA76C3400ABC2D0 /* SwiftStylish.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD1135B1FA76A8000ABC2D0 /* SwiftStylish.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5DD1136F1FA76CCE00ABC2D0 /* NSObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD1136E1FA76CCE00ABC2D0 /* NSObjectExtensions.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +38,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5DD1136B1FA76C3400ABC2D0 /* SwiftStylish.framework in Embed Frameworks */,
+				5D3DBA7F202B3F2400A69AF2 /* SwiftStylish.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,6 +56,9 @@
 		5D13F2EB1FA7646F00E47606 /* StylishExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StylishExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D13F2EF1FA7647000E47606 /* StylishExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylishExampleTests.swift; sourceTree = "<group>"; };
 		5D13F2F11FA7647000E47606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D3DBA79202B368600A69AF2 /* ImageStyles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ImageStyles.json; sourceTree = "<group>"; };
+		5D3DBA7B202B389A00A69AF2 /* Variables.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Variables.json; sourceTree = "<group>"; };
+		5D3DBA7D202B3F2400A69AF2 /* SwiftStylish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftStylish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DD1134B1FA7663800ABC2D0 /* FontStyles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FontStyles.json; sourceTree = "<group>"; };
 		5DD1135B1FA76A8000ABC2D0 /* SwiftStylish.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftStylish.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/SwiftStylish-gfgyhhoqyxrjagcmwkldbaqacuvc/Build/Products/Debug-iphonesimulator/SwiftStylish.framework"; sourceTree = "<group>"; };
 		5DD1136E1FA76CCE00ABC2D0 /* NSObjectExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtensions.swift; sourceTree = "<group>"; };
@@ -64,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DD1136A1FA76C3400ABC2D0 /* SwiftStylish.framework in Frameworks */,
+				5D3DBA7E202B3F2400A69AF2 /* SwiftStylish.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,7 @@
 		5D13F2CE1FA7646F00E47606 = {
 			isa = PBXGroup;
 			children = (
+				5D3DBA7D202B3F2400A69AF2 /* SwiftStylish.framework */,
 				5D13F2D91FA7646F00E47606 /* StylishExample */,
 				5D13F2EE1FA7647000E47606 /* StylishExampleTests */,
 				5D13F2D81FA7646F00E47606 /* Products */,
@@ -124,7 +130,9 @@
 		5D13F3071FA7656200E47606 /* Styles */ = {
 			isa = PBXGroup;
 			children = (
+				5D3DBA79202B368600A69AF2 /* ImageStyles.json */,
 				5DD1134B1FA7663800ABC2D0 /* FontStyles.json */,
+				5D3DBA7B202B389A00A69AF2 /* Variables.json */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -231,8 +239,10 @@
 			files = (
 				5D13F2E51FA7646F00E47606 /* LaunchScreen.storyboard in Resources */,
 				5D13F2E21FA7646F00E47606 /* Assets.xcassets in Resources */,
+				5D3DBA7A202B368700A69AF2 /* ImageStyles.json in Resources */,
 				5DD1134C1FA7663800ABC2D0 /* FontStyles.json in Resources */,
 				5D13F2E01FA7646F00E47606 /* Main.storyboard in Resources */,
+				5D3DBA7C202B389A00A69AF2 /* Variables.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

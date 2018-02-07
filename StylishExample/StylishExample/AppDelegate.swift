@@ -19,6 +19,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool
     {
         SwiftStylisher.default.forceClear()
+        do
+        {
+            try SwiftStylisher.default.loadVariablesFile(filename: "Variables", bundle: .main)
+        }
+        catch let error
+        {
+            assertionFailure(error.localizedDescription)
+        }
         return true
     }
 

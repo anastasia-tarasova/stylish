@@ -1,0 +1,18 @@
+{
+    "@colors":{
+        "system_blue": "#0076FF",
+        "system_blue_pressed": "#99c8ff",
+        "common_red_color": "#FE3824"
+    },
+    "@fonts":{
+        "title_font": { "name": "Arial", "size": 16 },
+        "selected_cell_font": { "name": "Arial", "size": 12 }
+    },
+    "@numbers":
+    {
+        "label_number_of_lines": 3,
+        "pading": 10,
+        "width": 170
+    }
+}
+

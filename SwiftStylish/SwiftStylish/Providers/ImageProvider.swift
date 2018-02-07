@@ -18,7 +18,8 @@ extension ImageProvider: ButtonProviderProtocol
     func applyItem(forButton button: UIButton, item: StyleItem, variables: StyleVariables?) throws
     {
         let value = StyleValue(value: item.value, bundle: self.bundle, variables: variables)
-        button.setImage(try value.toImage(), for: item.state.toControlState())
+        let state = item.state.toControlState()
+        button.setImage(try value.toImage(existingImage: button.image(for: state)), for: state)
     }
 }
 
