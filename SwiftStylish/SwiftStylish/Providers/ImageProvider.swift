@@ -49,5 +49,14 @@ extension ImageProvider: BarButtonItemProviderProtocol
     }
 }
 
+extension ImageProvider: TabBarItemProviderProtocol
+{
+    func applyItem(forTabBarItem tabBarItem: UITabBarItem, item: StyleItem, variables: StyleVariables?) throws
+    {
+        let value = StyleValue(value: item.value, bundle: self.bundle, variables: variables)
+        tabBarItem.image = try value.toImage(existingImage: tabBarItem.image)
+    }
+}
+
 // TODO: SegmentedControlProviderProtocol
 // TODO: SwitchViewProviderProtocol
