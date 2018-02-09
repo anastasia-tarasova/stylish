@@ -28,6 +28,8 @@
 		557424571DAA935C000F770E /* OpacityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557424561DAA935C000F770E /* OpacityProvider.swift */; };
 		55DF11A91DA6E939005271A1 /* BackgroundColorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DF11A81DA6E939005271A1 /* BackgroundColorProvider.swift */; };
 		55DF11B21DA6F5CB005271A1 /* BaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DF11B11DA6F5CB005271A1 /* BaseProvider.swift */; };
+		5D4997CA202DE65600770FC6 /* SeparatorStyleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4997C9202DE65600770FC6 /* SeparatorStyleProvider.swift */; };
+		5D4997CC202DE87300770FC6 /* SeparatorStyleProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4997CB202DE87300770FC6 /* SeparatorStyleProviderTests.swift */; };
 		5D8134491F5858EA00E7BDCD /* AttributedPlaceholderProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8134481F5858EA00E7BDCD /* AttributedPlaceholderProvider.swift */; };
 		5D81344B1F585BCE00E7BDCD /* AttributedPlaceholderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D81344A1F585BCE00E7BDCD /* AttributedPlaceholderTests.swift */; };
 		5D81344E1F5946F400E7BDCD /* VerticalAlignmentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D81344D1F5946F400E7BDCD /* VerticalAlignmentProvider.swift */; };
@@ -164,6 +166,8 @@
 		557424561DAA935C000F770E /* OpacityProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpacityProvider.swift; sourceTree = "<group>"; };
 		55DF11A81DA6E939005271A1 /* BackgroundColorProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundColorProvider.swift; sourceTree = "<group>"; };
 		55DF11B11DA6F5CB005271A1 /* BaseProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseProvider.swift; sourceTree = "<group>"; };
+		5D4997C9202DE65600770FC6 /* SeparatorStyleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorStyleProvider.swift; sourceTree = "<group>"; };
+		5D4997CB202DE87300770FC6 /* SeparatorStyleProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorStyleProviderTests.swift; sourceTree = "<group>"; };
 		5D8134481F5858EA00E7BDCD /* AttributedPlaceholderProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedPlaceholderProvider.swift; sourceTree = "<group>"; };
 		5D81344A1F585BCE00E7BDCD /* AttributedPlaceholderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedPlaceholderTests.swift; sourceTree = "<group>"; };
 		5D81344D1F5946F400E7BDCD /* VerticalAlignmentProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalAlignmentProvider.swift; sourceTree = "<group>"; };
@@ -350,6 +354,7 @@
 				7B5E466E1DA7D31800E8B47E /* SelectableProvider.swift */,
 				3EAFF72A1DE449BC00DB64A6 /* SelectedImageProvider.swift */,
 				7B5E46771DA7D33A00E8B47E /* SeparatorColorProvider.swift */,
+				5D4997C9202DE65600770FC6 /* SeparatorStyleProvider.swift */,
 				7B5E46381DA7CED400E8B47E /* ShadowImageProvider.swift */,
 				7B5E46531DA7D27F00E8B47E /* ShadowProvider.swift */,
 				7B5E46411DA7D04900E8B47E /* TextAlignmentProvider.swift */,
@@ -395,6 +400,7 @@
 				5D81346F1F59725200E7BDCD /* SelectableProviderTests.swift */,
 				5D8134701F59725200E7BDCD /* SelectedImageProviderTest.swift */,
 				5D8134711F59725200E7BDCD /* SeparatorColorProviderTests.swift */,
+				5D4997CB202DE87300770FC6 /* SeparatorStyleProviderTests.swift */,
 				5D8134721F59725200E7BDCD /* ShadowProviderTests.swift */,
 				5D8134731F59725200E7BDCD /* TextAlignmentProviderTests.swift */,
 				5D8134741F59725200E7BDCD /* TextAttributesProviderTests.swift */,
@@ -704,6 +710,7 @@
 				5534D9EB1DACD971009BF4D9 /* ImageProvider.swift in Sources */,
 				7BF4AAF51F56E2B3008D2003 /* StyleVariables.swift in Sources */,
 				7B5E46511DA7D27400E8B47E /* FontProvider.swift in Sources */,
+				5D4997CA202DE65600770FC6 /* SeparatorStyleProvider.swift in Sources */,
 				7BF0BC401E1E7E7400604185 /* SSTextField.swift in Sources */,
 				5534D9E61DACD607009BF4D9 /* StyleValue.swift in Sources */,
 				3EAFF72B1DE449BC00DB64A6 /* SelectedImageProvider.swift in Sources */,
@@ -754,6 +761,7 @@
 				5D81348C1F59725200E7BDCD /* PlaceholderProviderTests.swift in Sources */,
 				5D81349E1F59728300E7BDCD /* HorizontalAlignmentProviderTests.swift in Sources */,
 				7B3EF0D21DA6900900EAADB3 /* ParserTests.swift in Sources */,
+				5D4997CC202DE87300770FC6 /* SeparatorStyleProviderTests.swift in Sources */,
 				5D8134881F59725200E7BDCD /* HiddenProviderTests.swift in Sources */,
 				5D8134901F59725200E7BDCD /* SelectedImageProviderTest.swift in Sources */,
 				5D81347C1F59725200E7BDCD /* AlphaProviderTests.swift in Sources */,

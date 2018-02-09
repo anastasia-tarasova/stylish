@@ -138,6 +138,30 @@ extension StyleValue
     }
 }
 
+// MARK: - Separator Style
+
+extension StyleValue
+{
+    func toSeparatorStyle() throws -> UITableViewCellSeparatorStyle
+    {
+        let stringValue = try self.stringValue()
+        
+        switch stringValue
+        {
+        case "none":
+            return .none
+            
+        case "singleLine":
+            return .singleLine
+            
+        case "singleLineEtched":
+            return .singleLineEtched
+            
+        default: throw StyleValueError.invalidParameterValue(parameter: "separator-style", currentValue: stringValue, possibleValues: "none, singleLine, singleLineEtched")
+        }
+    }
+}
+
 // MARK: - Bar Metrics
 
 extension StyleValue

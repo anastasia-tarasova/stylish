@@ -133,6 +133,11 @@
             "separator-color": "#ff0000"
         },
         
+        ".separator-style":
+        {
+            "separator-style" : "none"
+        },
+        
         ".back-indicator-image":
         {
             "back-indicator-image":

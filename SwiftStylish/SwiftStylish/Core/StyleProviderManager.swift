@@ -67,6 +67,7 @@ enum StyleItemKeys: StyleItemKey
     
     case borderColor = "border-color"                       // BorderColorProvider
     case separatorColor = "separator-color"                 // SeparatorColorProvider
+    case separatorStyle = "separator-style"                 // SeparatorStyleProvider
     case borderWidth = "border-width"                       // BorderWidthProvider
     case cornerRadius = "corner-radius"                     // CornerRadiusProvider
     
@@ -122,6 +123,7 @@ extension StyleProviderManager
         registerKey(key: StyleItemKeys.shadow.rawValue, withProvider: ShadowProvider())
         registerKey(key: StyleItemKeys.borderColor.rawValue, withProvider: BorderColorProvider())
         registerKey(key: StyleItemKeys.separatorColor.rawValue, withProvider: SeparatorColorProvider())
+        registerKey(key: StyleItemKeys.separatorStyle.rawValue, withProvider: SeparatorStyleProvider())
         registerKey(key: StyleItemKeys.borderWidth.rawValue, withProvider: BorderWidthProvider())
         registerKey(key: StyleItemKeys.cornerRadius.rawValue, withProvider: CornerRadiusProvider())
         registerKey(key: StyleItemKeys.opacity.rawValue, withProvider: OpacityProvider())
