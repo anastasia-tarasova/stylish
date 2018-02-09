@@ -23,3 +23,12 @@ extension ThumbTintColorProvider: SwitchViewProviderProtocol
     }
 }
 
+extension ThumbTintColorProvider: SliderProviderProtocol
+{
+    func applyItem(forSlider slider: UISlider, item: StyleItem, variables: StyleVariables?) throws
+    {
+         let value = StyleValue(value: item.value, bundle: self.bundle, variables: variables)
+         slider.thumbTintColor = try value.toColor()
+    }
+}
+
