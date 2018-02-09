@@ -32,6 +32,8 @@
 		5D4997CC202DE87300770FC6 /* SeparatorStyleProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4997CB202DE87300770FC6 /* SeparatorStyleProviderTests.swift */; };
 		5D4997CE202DEDC100770FC6 /* BadgeColorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4997CD202DEDC100770FC6 /* BadgeColorProvider.swift */; };
 		5D4997D0202DEF0000770FC6 /* BadgeColorProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4997CF202DEF0000770FC6 /* BadgeColorProviderTests.swift */; };
+		5D4997D2202DF28000770FC6 /* ProgressImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4997D1202DF28000770FC6 /* ProgressImageProvider.swift */; };
+		5D4997D4202DF38B00770FC6 /* ProgressImageProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4997D3202DF38B00770FC6 /* ProgressImageProviderTests.swift */; };
 		5D8134491F5858EA00E7BDCD /* AttributedPlaceholderProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8134481F5858EA00E7BDCD /* AttributedPlaceholderProvider.swift */; };
 		5D81344B1F585BCE00E7BDCD /* AttributedPlaceholderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D81344A1F585BCE00E7BDCD /* AttributedPlaceholderTests.swift */; };
 		5D81344E1F5946F400E7BDCD /* VerticalAlignmentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D81344D1F5946F400E7BDCD /* VerticalAlignmentProvider.swift */; };
@@ -172,6 +174,8 @@
 		5D4997CB202DE87300770FC6 /* SeparatorStyleProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorStyleProviderTests.swift; sourceTree = "<group>"; };
 		5D4997CD202DEDC100770FC6 /* BadgeColorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeColorProvider.swift; sourceTree = "<group>"; };
 		5D4997CF202DEF0000770FC6 /* BadgeColorProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeColorProviderTests.swift; sourceTree = "<group>"; };
+		5D4997D1202DF28000770FC6 /* ProgressImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressImageProvider.swift; sourceTree = "<group>"; };
+		5D4997D3202DF38B00770FC6 /* ProgressImageProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressImageProviderTests.swift; sourceTree = "<group>"; };
 		5D8134481F5858EA00E7BDCD /* AttributedPlaceholderProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedPlaceholderProvider.swift; sourceTree = "<group>"; };
 		5D81344A1F585BCE00E7BDCD /* AttributedPlaceholderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedPlaceholderTests.swift; sourceTree = "<group>"; };
 		5D81344D1F5946F400E7BDCD /* VerticalAlignmentProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalAlignmentProvider.swift; sourceTree = "<group>"; };
@@ -353,6 +357,7 @@
 				7B5E464D1DA7D26900E8B47E /* NumberOfLinesProvider.swift */,
 				557424561DAA935C000F770E /* OpacityProvider.swift */,
 				7B5E464A1DA7D13C00E8B47E /* PlaceholderProvider.swift */,
+				5D4997D1202DF28000770FC6 /* ProgressImageProvider.swift */,
 				5DA2CCC61FA7117D009C7E82 /* ProgressTintColorProvider.swift */,
 				7B83779B1E014D0900558921 /* RenderingModeProvider.swift */,
 				7B5E466B1DA7D30E00E8B47E /* ScrollEnabledProvider.swift */,
@@ -402,6 +407,7 @@
 				5D81346C1F59725200E7BDCD /* PlaceholderProviderTests.swift */,
 				5D81346D1F59725200E7BDCD /* RenderingModeProviderTests.swift */,
 				5DA2CCC81FA7150B009C7E82 /* ProgressTintColorProviderTests.swift */,
+				5D4997D3202DF38B00770FC6 /* ProgressImageProviderTests.swift */,
 				5D81346E1F59725200E7BDCD /* ScrollEnabledProviderTests.swift */,
 				5D81346F1F59725200E7BDCD /* SelectableProviderTests.swift */,
 				5D8134701F59725200E7BDCD /* SelectedImageProviderTest.swift */,
@@ -728,6 +734,7 @@
 				7BF0BB2D1E1E57A200604185 /* SSButton.swift in Sources */,
 				7B5E46871DA7D3D600E8B47E /* TransformProvider.swift in Sources */,
 				7B5E463C1DA7CF6B00E8B47E /* AlphaProvider.swift in Sources */,
+				5D4997D2202DF28000770FC6 /* ProgressImageProvider.swift in Sources */,
 				5534D9E91DACD607009BF4D9 /* SwiftStylisher.swift in Sources */,
 				7B5E46481DA7D0B800E8B47E /* AttributedTextProvider.swift in Sources */,
 				5D8134491F5858EA00E7BDCD /* AttributedPlaceholderProvider.swift in Sources */,
@@ -766,6 +773,7 @@
 				5D8134961F59725200E7BDCD /* TextProviderTests.swift in Sources */,
 				5D4997D0202DEF0000770FC6 /* BadgeColorProviderTests.swift in Sources */,
 				5D81348E1F59725200E7BDCD /* ScrollEnabledProviderTests.swift in Sources */,
+				5D4997D4202DF38B00770FC6 /* ProgressImageProviderTests.swift in Sources */,
 				5D81348C1F59725200E7BDCD /* PlaceholderProviderTests.swift in Sources */,
 				5D81349E1F59728300E7BDCD /* HorizontalAlignmentProviderTests.swift in Sources */,
 				7B3EF0D21DA6900900EAADB3 /* ParserTests.swift in Sources */,

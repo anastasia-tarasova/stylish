@@ -361,6 +361,11 @@
             "vertical-alignment": "bottom",
             "horizontal-alignment": "right"
         },
+        
+        ".progress-image":
+        {
+            "progress-image": "testImage2"
+        },
 
         ".image":
         {

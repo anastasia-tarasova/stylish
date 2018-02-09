@@ -34,6 +34,7 @@ enum StyleItemKeys: StyleItemKey
     case backgroundImage = "background-image"               // BackgroundImageProvider
     case dividerImage = "divider-image"                     // DividerImageProvider
     case image = "image"                                    // ImageProvider
+    case progressImage = "progress-image"                   // ProgressImageProvider
     case selectedImage = "selected-image"                   // SelectedImageProvider
     case shadowImage = "shadow-image"                       // ShadowImageProvider
     case alpha = "alpha"                                    // AlphaProvider
@@ -157,6 +158,7 @@ extension StyleProviderManager
     final func registerImageProviders()
     {
         registerKey(key: StyleItemKeys.renderingMode.rawValue, withProvider: RenderingModeProvider())
+        registerKey(key: StyleItemKeys.progressImage.rawValue, withProvider: ProgressImageProvider())
     }
     
     final func registerColorProviders()
