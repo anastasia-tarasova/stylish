@@ -22,6 +22,5 @@ extension DividerImageProvider: SegmentedControlProviderProtocol
         {
             segmentedControl.setDividerImage(image, forLeftSegmentState: leftState, rightSegmentState: rightState, barMetrics: barMetrics)
         }
-        
     }
 }
