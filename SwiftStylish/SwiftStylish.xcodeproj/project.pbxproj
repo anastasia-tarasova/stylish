@@ -30,6 +30,8 @@
 		55DF11B21DA6F5CB005271A1 /* BaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DF11B11DA6F5CB005271A1 /* BaseProvider.swift */; };
 		5D4997CA202DE65600770FC6 /* SeparatorStyleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4997C9202DE65600770FC6 /* SeparatorStyleProvider.swift */; };
 		5D4997CC202DE87300770FC6 /* SeparatorStyleProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4997CB202DE87300770FC6 /* SeparatorStyleProviderTests.swift */; };
+		5D4997CE202DEDC100770FC6 /* BadgeColorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4997CD202DEDC100770FC6 /* BadgeColorProvider.swift */; };
+		5D4997D0202DEF0000770FC6 /* BadgeColorProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4997CF202DEF0000770FC6 /* BadgeColorProviderTests.swift */; };
 		5D8134491F5858EA00E7BDCD /* AttributedPlaceholderProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8134481F5858EA00E7BDCD /* AttributedPlaceholderProvider.swift */; };
 		5D81344B1F585BCE00E7BDCD /* AttributedPlaceholderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D81344A1F585BCE00E7BDCD /* AttributedPlaceholderTests.swift */; };
 		5D81344E1F5946F400E7BDCD /* VerticalAlignmentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D81344D1F5946F400E7BDCD /* VerticalAlignmentProvider.swift */; };
@@ -168,6 +170,8 @@
 		55DF11B11DA6F5CB005271A1 /* BaseProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseProvider.swift; sourceTree = "<group>"; };
 		5D4997C9202DE65600770FC6 /* SeparatorStyleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorStyleProvider.swift; sourceTree = "<group>"; };
 		5D4997CB202DE87300770FC6 /* SeparatorStyleProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeparatorStyleProviderTests.swift; sourceTree = "<group>"; };
+		5D4997CD202DEDC100770FC6 /* BadgeColorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeColorProvider.swift; sourceTree = "<group>"; };
+		5D4997CF202DEF0000770FC6 /* BadgeColorProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeColorProviderTests.swift; sourceTree = "<group>"; };
 		5D8134481F5858EA00E7BDCD /* AttributedPlaceholderProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedPlaceholderProvider.swift; sourceTree = "<group>"; };
 		5D81344A1F585BCE00E7BDCD /* AttributedPlaceholderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedPlaceholderTests.swift; sourceTree = "<group>"; };
 		5D81344D1F5946F400E7BDCD /* VerticalAlignmentProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalAlignmentProvider.swift; sourceTree = "<group>"; };
@@ -328,6 +332,7 @@
 				55DF11A81DA6E939005271A1 /* BackgroundColorProvider.swift */,
 				7B5E46351DA7B32200E8B47E /* BackgroundImageProvider.swift */,
 				7B8377A11E016A2A00558921 /* BackIndicatorImageProvider.swift */,
+				5D4997CD202DEDC100770FC6 /* BadgeColorProvider.swift */,
 				3EAFF72C1DE44AFD00DB64A6 /* BarTintColorProvider.swift */,
 				55DF11B11DA6F5CB005271A1 /* BaseProvider.swift */,
 				7B5E46741DA7D33000E8B47E /* BorderColorProvider.swift */,
@@ -380,6 +385,7 @@
 				5D81345D1F59725200E7BDCD /* AttributedText.swift */,
 				5D81345E1F59725200E7BDCD /* BackgroundColorProviderTests.swift */,
 				5D81345F1F59725200E7BDCD /* BackIndicatorImageProviderTests.swift */,
+				5D4997CF202DEF0000770FC6 /* BadgeColorProviderTests.swift */,
 				5D8134601F59725200E7BDCD /* BarTintColorProviderTests.swift */,
 				5D8134611F59725200E7BDCD /* BorderColorProviderTests.swift */,
 				5D8134621F59725200E7BDCD /* BorderWidthProviderTests.swift */,
@@ -679,6 +685,7 @@
 				7B5E46841DA7D3CD00E8B47E /* ClipsToBoundsProvider.swift in Sources */,
 				557424571DAA935C000F770E /* OpacityProvider.swift in Sources */,
 				7B5E46541DA7D27F00E8B47E /* ShadowProvider.swift in Sources */,
+				5D4997CE202DEDC100770FC6 /* BadgeColorProvider.swift in Sources */,
 				5DA2CCC51FA7113E009C7E82 /* TrackTintColorProvider.swift in Sources */,
 				555F24C51DAD03C5005C3900 /* Errors.swift in Sources */,
 				7B5E468A1DA7D3DE00E8B47E /* UserInteractionEnabled.swift in Sources */,
@@ -757,6 +764,7 @@
 				5D81348D1F59725200E7BDCD /* RenderingModeProviderTests.swift in Sources */,
 				5D81347D1F59725200E7BDCD /* AttributedText.swift in Sources */,
 				5D8134961F59725200E7BDCD /* TextProviderTests.swift in Sources */,
+				5D4997D0202DEF0000770FC6 /* BadgeColorProviderTests.swift in Sources */,
 				5D81348E1F59725200E7BDCD /* ScrollEnabledProviderTests.swift in Sources */,
 				5D81348C1F59725200E7BDCD /* PlaceholderProviderTests.swift in Sources */,
 				5D81349E1F59728300E7BDCD /* HorizontalAlignmentProviderTests.swift in Sources */,

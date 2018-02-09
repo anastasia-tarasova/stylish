@@ -5,7 +5,10 @@
         {
             "background-color": "#ff0000"
         },
-    
+        ".badge-color":
+        {
+            "badge-color": "#ff0000"
+        },
         ".alpha":
         {
             "alpha": 0.15

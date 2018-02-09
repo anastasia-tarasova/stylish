@@ -64,6 +64,7 @@ enum StyleItemKeys: StyleItemKey
     case scrollEnabled = "scroll-enabled"                   // ScrollEnabledProvider
     case selectable = "selectable"                          // SelectableProvider
     case color = "color"                                    // ColorProvider
+    case badgeColor = "badge-color"                         // BadgeColorProvider
     
     case borderColor = "border-color"                       // BorderColorProvider
     case separatorColor = "separator-color"                 // SeparatorColorProvider
@@ -162,5 +163,6 @@ extension StyleProviderManager
     {
         registerKey(key: StyleItemKeys.progressTintColor.rawValue, withProvider: ProgressTintColorProvider())
         registerKey(key: StyleItemKeys.trackTintColor.rawValue, withProvider: TrackTintColorProvider())
+        registerKey(key: StyleItemKeys.badgeColor.rawValue, withProvider: BadgeColorProvider())
     }
 }
