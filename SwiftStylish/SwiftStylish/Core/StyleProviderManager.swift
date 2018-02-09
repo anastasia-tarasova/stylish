@@ -30,52 +30,52 @@ class StyleProviderManager
 
 enum StyleItemKeys: StyleItemKey
 {
+    // Colors
     case backgroundColor = "background-color"               // BackgroundColorProvider
+    case badgeColor = "badge-color"                         // BadgeColorProvider
+    case barTintColor = "bar-tint-color"                    // BarTintColorProvider
+    case borderColor = "border-color"                       // BorderColorProvider
+    case color = "color"                                    // ColorProvider
+    case progressTintColor = "progress-tint-color"          // ProgressViewProviderProtocol
+    case separatorColor = "separator-color"                 // SeparatorColorProvider
+    case textColor = "text-color"                           // TextColorProvider
+    case tintColor = "tint-color"                           // TintColorProvider
+    case thumbTintColor = "thumb-tint-color"                // ThumbTintColorProvider
+    case trackTintColor = "track-tint-color"                // ProgressViewProviderProtocol
+    
+    // Images
     case backgroundImage = "background-image"               // BackgroundImageProvider
+    case backIndicatorImage = "back-indicator-image"        // BackIndicatorImageProvider
     case dividerImage = "divider-image"                     // DividerImageProvider
     case image = "image"                                    // ImageProvider
     case progressImage = "progress-image"                   // ProgressImageProvider
     case selectedImage = "selected-image"                   // SelectedImageProvider
     case shadowImage = "shadow-image"                       // ShadowImageProvider
     case trackImage = "track-image"                         // TrackImageProvider
-    case alpha = "alpha"                                    // AlphaProvider
-    case opacity = "opacity"                                // OpacityProvider
-    case textColor = "text-color"                           // TextColorProvider
-    case textAlignment = "text-alignment"                   // TextAlignmentProvider
-    case text = "text"                                      // TextProvider
-    case textAttributes = "text-attributes"                 // TextAttributesProvider
-    case titles = "titles"                                  // TitleAttributesProvider
-    case attributedText = "attributed-text"                 // AttributedTextProvider
-    case attributedPlaceholder = "attributed-placeholder"   // AttributedPlaceholderProvider
-    case placeholder = "placeholder"                        // PlaceholderProvider
-    case numberOfLines = "number-of-lines"                  // NumberOfLinesProvider
-    case font = "font"                                      // FontProvider
-    case shadow = "shadow"                                  // ShadowProvider
-    case tintColor = "tint-color"                           // TintColorProvider
-    case thumbTintColor = "thumb-tint-color"                // ThumbTintColorProvider
-    case barTintColor = "bar-tint-color"                    // BarTintColorProvider
-    case backIndicatorImage = "back-indicator-image"        // BackIndicatorImageProviderTests
-    case trackTintColor = "track-tint-color"                // ProgressViewProviderProtocol
-    case progressTintColor = "progress-tint-color"          // ProgressViewProviderProtocol
-    case translucent = "translucent"                        // TranslucentProvider
-    case dataDetectorType = "data-detector-type"            // DataDetectorTypeProvider
-    case linkTextAttributes = "link-text-attributes"        // LinkTextAttributesProvider
-    case editable = "editable"                              // EditableProvider
-    case contentInset = "content-inset"                     // ContentInsetProvider
-    case contentMode = "content-mode"                       // ContentModeProvider
     
+    // Text
+    case attributedPlaceholder = "attributed-placeholder"   // AttributedPlaceholderProvider
+    case attributedText = "attributed-text"                 // AttributedTextProvider
+    case font = "font"                                      // FontProvider
+    case linkTextAttributes = "link-text-attributes"        // LinkTextAttributesProvider
+    case numberOfLines = "number-of-lines"                  // NumberOfLinesProvider
+    case placeholder = "placeholder"                        // PlaceholderProvider
+    case text = "text"                                      // TextProvider
+    case textAlignment = "text-alignment"                   // TextAlignmentProvider
+    case textAttributes = "text-attributes"                 // TextAttributesProvider
+    
+    // User Interaction
+    case editable = "editable"                              // EditableProvider
     case scrollEnabled = "scroll-enabled"                   // ScrollEnabledProvider
     case selectable = "selectable"                          // SelectableProvider
-    case color = "color"                                    // ColorProvider
-    case badgeColor = "badge-color"                         // BadgeColorProvider
     
-    case borderColor = "border-color"                       // BorderColorProvider
-    case separatorColor = "separator-color"                 // SeparatorColorProvider
-    case separatorStyle = "separator-style"                 // SeparatorStyleProvider
+    // View Appearance
+    case alpha = "alpha"                                    // AlphaProvider
+    case opacity = "opacity"                                // OpacityProvider
     case borderWidth = "border-width"                       // BorderWidthProvider
     case cornerRadius = "corner-radius"                     // CornerRadiusProvider
-    
-    case renderingMode = "rendering-mode"                   // RenderingModeProvider
+    case shadow = "shadow"                                  // ShadowProvider
+    case translucent = "translucent"                        // TranslucentProvider
     
     // Behavior
     
@@ -87,6 +87,13 @@ enum StyleItemKeys: StyleItemKey
     // Layout
     case verticalAlignment = "vertical-alignment"           // VerticalAlignmentProvider
     case horizontalAlignment = "horizontal-alignment"       // HorizontalAlignmentProvider
+    case contentInset = "content-inset"                     // ContentInsetProvider
+    case contentMode = "content-mode"                       // ContentModeProvider
+    
+    case dataDetectorType = "data-detector-type"            // DataDetectorTypeProvider
+    case separatorStyle = "separator-style"                 // SeparatorStyleProvider
+    case renderingMode = "rendering-mode"                   // RenderingModeProvider
+    case titles = "titles"                                  // TitleAttributesProvider
 }
 
 extension StyleProviderManager
