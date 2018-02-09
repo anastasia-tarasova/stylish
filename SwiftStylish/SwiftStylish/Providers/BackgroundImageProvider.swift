@@ -52,3 +52,11 @@ extension BackgroundImageProvider: TabBarProviderProtocol
         tabBar.backgroundImage = try value.toImage()
     }
 }
+
+extension BackgroundImageProvider: TextFieldProviderProtocol
+{
+    func applyItem(forTextField textField: UITextField, item: StyleItem, variables: StyleVariables?) throws {
+        let value = StyleValue(value: item.value, bundle: self.bundle, variables: variables)
+        textField.background = try value.toImage(existingImage: textField.background)
+    }
+}
