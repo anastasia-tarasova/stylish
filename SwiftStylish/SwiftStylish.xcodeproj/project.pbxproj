@@ -34,6 +34,8 @@
 		5D4997D0202DEF0000770FC6 /* BadgeColorProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4997CF202DEF0000770FC6 /* BadgeColorProviderTests.swift */; };
 		5D4997D2202DF28000770FC6 /* ProgressImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4997D1202DF28000770FC6 /* ProgressImageProvider.swift */; };
 		5D4997D4202DF38B00770FC6 /* ProgressImageProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4997D3202DF38B00770FC6 /* ProgressImageProviderTests.swift */; };
+		5D4997D6202DF62F00770FC6 /* TrackImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4997D5202DF62F00770FC6 /* TrackImageProvider.swift */; };
+		5D4997D8202DF73200770FC6 /* TrackImageProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4997D7202DF73200770FC6 /* TrackImageProviderTests.swift */; };
 		5D8134491F5858EA00E7BDCD /* AttributedPlaceholderProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8134481F5858EA00E7BDCD /* AttributedPlaceholderProvider.swift */; };
 		5D81344B1F585BCE00E7BDCD /* AttributedPlaceholderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D81344A1F585BCE00E7BDCD /* AttributedPlaceholderTests.swift */; };
 		5D81344E1F5946F400E7BDCD /* VerticalAlignmentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D81344D1F5946F400E7BDCD /* VerticalAlignmentProvider.swift */; };
@@ -176,6 +178,8 @@
 		5D4997CF202DEF0000770FC6 /* BadgeColorProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeColorProviderTests.swift; sourceTree = "<group>"; };
 		5D4997D1202DF28000770FC6 /* ProgressImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressImageProvider.swift; sourceTree = "<group>"; };
 		5D4997D3202DF38B00770FC6 /* ProgressImageProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressImageProviderTests.swift; sourceTree = "<group>"; };
+		5D4997D5202DF62F00770FC6 /* TrackImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackImageProvider.swift; sourceTree = "<group>"; };
+		5D4997D7202DF73200770FC6 /* TrackImageProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackImageProviderTests.swift; sourceTree = "<group>"; };
 		5D8134481F5858EA00E7BDCD /* AttributedPlaceholderProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedPlaceholderProvider.swift; sourceTree = "<group>"; };
 		5D81344A1F585BCE00E7BDCD /* AttributedPlaceholderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedPlaceholderTests.swift; sourceTree = "<group>"; };
 		5D81344D1F5946F400E7BDCD /* VerticalAlignmentProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalAlignmentProvider.swift; sourceTree = "<group>"; };
@@ -373,6 +377,7 @@
 				7B5E46441DA7D07B00E8B47E /* TextProvider.swift */,
 				7B5E46561DA7D28900E8B47E /* TintColorProvider.swift */,
 				3E9A7DF01DE869C000758F2F /* TitlesProvider.swift */,
+				5D4997D5202DF62F00770FC6 /* TrackImageProvider.swift */,
 				5DA2CCC41FA7113E009C7E82 /* TrackTintColorProvider.swift */,
 				7B5E46861DA7D3D600E8B47E /* TransformProvider.swift */,
 				7B5E46591DA7D29100E8B47E /* TranslucentProvider.swift */,
@@ -420,6 +425,7 @@
 				5D8134761F59725200E7BDCD /* TextProviderTests.swift */,
 				5D8134771F59725200E7BDCD /* TintColorProviderTests.swift */,
 				5D8134781F59725200E7BDCD /* TitlesProviderTests.swift */,
+				5D4997D7202DF73200770FC6 /* TrackImageProviderTests.swift */,
 				5DA2CCCA1FA71519009C7E82 /* TrackTintColorProviderTests.swift */,
 				5D8134791F59725200E7BDCD /* TransformProviderTests.swift */,
 				5D81347A1F59725200E7BDCD /* TranslucentProviderTests.swift */,
@@ -675,6 +681,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D4997D6202DF62F00770FC6 /* TrackImageProvider.swift in Sources */,
 				7B5E46391DA7CED400E8B47E /* ShadowImageProvider.swift in Sources */,
 				7B5E46421DA7D04900E8B47E /* TextAlignmentProvider.swift in Sources */,
 				7B41D8421F5424CA0059C4F1 /* JSONLoader.swift in Sources */,
@@ -764,6 +771,7 @@
 				5D8134801F59725200E7BDCD /* BarTintColorProviderTests.swift in Sources */,
 				5D81349B1F59725200E7BDCD /* UserInteractionEnabledTests.swift in Sources */,
 				5DA2CCC91FA7150B009C7E82 /* ProgressTintColorProviderTests.swift in Sources */,
+				5D4997D8202DF73200770FC6 /* TrackImageProviderTests.swift in Sources */,
 				5DA2CCCB1FA71519009C7E82 /* TrackTintColorProviderTests.swift in Sources */,
 				5D8134871F59725200E7BDCD /* FontProviderTests.swift in Sources */,
 				5D81348B1F59725200E7BDCD /* OpacityProviderTests.swift in Sources */,

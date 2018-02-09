@@ -37,6 +37,7 @@ enum StyleItemKeys: StyleItemKey
     case progressImage = "progress-image"                   // ProgressImageProvider
     case selectedImage = "selected-image"                   // SelectedImageProvider
     case shadowImage = "shadow-image"                       // ShadowImageProvider
+    case trackImage = "track-image"                         // TrackImageProvider
     case alpha = "alpha"                                    // AlphaProvider
     case opacity = "opacity"                                // OpacityProvider
     case textColor = "text-color"                           // TextColorProvider
@@ -159,6 +160,7 @@ extension StyleProviderManager
     {
         registerKey(key: StyleItemKeys.renderingMode.rawValue, withProvider: RenderingModeProvider())
         registerKey(key: StyleItemKeys.progressImage.rawValue, withProvider: ProgressImageProvider())
+        registerKey(key: StyleItemKeys.trackImage.rawValue, withProvider: TrackImageProvider())
     }
     
     final func registerColorProviders()
