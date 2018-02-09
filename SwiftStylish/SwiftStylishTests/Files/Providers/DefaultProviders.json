@@ -29,6 +29,11 @@
             "track-tint-color": "#ff0000"
         },
         
+        ".thumb-tint-color":
+        {
+            "thumb-tint-color": "#ff0000"
+        },
+        
         ".progress-tint-color":
         {
             "progress-tint-color": "#ff0000"
@@ -361,17 +366,14 @@
             "vertical-alignment": "bottom",
             "horizontal-alignment": "right"
         },
-        
         ".progress-image":
         {
             "progress-image": "testImage2"
         },
-        
         ".track-image":
         {
             "track-image": "testImage2"
         },
-
         ".image":
         {
             "image": "testImage1",

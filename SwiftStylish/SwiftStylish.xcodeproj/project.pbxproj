@@ -36,6 +36,8 @@
 		5D4997D4202DF38B00770FC6 /* ProgressImageProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4997D3202DF38B00770FC6 /* ProgressImageProviderTests.swift */; };
 		5D4997D6202DF62F00770FC6 /* TrackImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4997D5202DF62F00770FC6 /* TrackImageProvider.swift */; };
 		5D4997D8202DF73200770FC6 /* TrackImageProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4997D7202DF73200770FC6 /* TrackImageProviderTests.swift */; };
+		5D4997DE202DFACB00770FC6 /* ThumbTintColorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4997DD202DFACB00770FC6 /* ThumbTintColorProvider.swift */; };
+		5D4997E0202DFBCD00770FC6 /* ThumbTintColorProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4997DF202DFBCD00770FC6 /* ThumbTintColorProviderTests.swift */; };
 		5D8134491F5858EA00E7BDCD /* AttributedPlaceholderProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8134481F5858EA00E7BDCD /* AttributedPlaceholderProvider.swift */; };
 		5D81344B1F585BCE00E7BDCD /* AttributedPlaceholderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D81344A1F585BCE00E7BDCD /* AttributedPlaceholderTests.swift */; };
 		5D81344E1F5946F400E7BDCD /* VerticalAlignmentProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D81344D1F5946F400E7BDCD /* VerticalAlignmentProvider.swift */; };
@@ -180,6 +182,8 @@
 		5D4997D3202DF38B00770FC6 /* ProgressImageProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressImageProviderTests.swift; sourceTree = "<group>"; };
 		5D4997D5202DF62F00770FC6 /* TrackImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackImageProvider.swift; sourceTree = "<group>"; };
 		5D4997D7202DF73200770FC6 /* TrackImageProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackImageProviderTests.swift; sourceTree = "<group>"; };
+		5D4997DD202DFACB00770FC6 /* ThumbTintColorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbTintColorProvider.swift; sourceTree = "<group>"; };
+		5D4997DF202DFBCD00770FC6 /* ThumbTintColorProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbTintColorProviderTests.swift; sourceTree = "<group>"; };
 		5D8134481F5858EA00E7BDCD /* AttributedPlaceholderProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedPlaceholderProvider.swift; sourceTree = "<group>"; };
 		5D81344A1F585BCE00E7BDCD /* AttributedPlaceholderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedPlaceholderTests.swift; sourceTree = "<group>"; };
 		5D81344D1F5946F400E7BDCD /* VerticalAlignmentProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalAlignmentProvider.swift; sourceTree = "<group>"; };
@@ -375,6 +379,7 @@
 				3E419F451DE6D7C400EAFA5E /* TextAttributesProvider.swift */,
 				7B5E463E1DA7CFA600E8B47E /* TextColorProvider.swift */,
 				7B5E46441DA7D07B00E8B47E /* TextProvider.swift */,
+				5D4997DD202DFACB00770FC6 /* ThumbTintColorProvider.swift */,
 				7B5E46561DA7D28900E8B47E /* TintColorProvider.swift */,
 				3E9A7DF01DE869C000758F2F /* TitlesProvider.swift */,
 				5D4997D5202DF62F00770FC6 /* TrackImageProvider.swift */,
@@ -383,6 +388,7 @@
 				7B5E46591DA7D29100E8B47E /* TranslucentProvider.swift */,
 				5D81344D1F5946F400E7BDCD /* VerticalAlignmentProvider.swift */,
 				7B5E46891DA7D3DE00E8B47E /* UserInteractionEnabled.swift */,
+				7B3EF0A31DA64F3B00EAADB3 /* SwiftStylish.h */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
@@ -424,6 +430,7 @@
 				5D8134751F59725200E7BDCD /* TextColorProviderTests.swift */,
 				5D8134761F59725200E7BDCD /* TextProviderTests.swift */,
 				5D8134771F59725200E7BDCD /* TintColorProviderTests.swift */,
+				5D4997DF202DFBCD00770FC6 /* ThumbTintColorProviderTests.swift */,
 				5D8134781F59725200E7BDCD /* TitlesProviderTests.swift */,
 				5D4997D7202DF73200770FC6 /* TrackImageProviderTests.swift */,
 				5DA2CCCA1FA71519009C7E82 /* TrackTintColorProviderTests.swift */,
@@ -509,7 +516,6 @@
 				5534D9DB1DACD607009BF4D9 /* Extensions */,
 				5534D9DE1DACD607009BF4D9 /* SwiftStylisher.swift */,
 				55DF11A71DA6E865005271A1 /* Providers */,
-				7B3EF0A31DA64F3B00EAADB3 /* SwiftStylish.h */,
 				7B3EF0A41DA64F3B00EAADB3 /* Info.plist */,
 			);
 			path = SwiftStylish;
@@ -726,6 +732,7 @@
 				5534D9E41DACD607009BF4D9 /* StyleProviderManager.swift in Sources */,
 				7B5E467B1DA7D34500E8B47E /* BorderWidthProvider.swift in Sources */,
 				3EAFF72D1DE44AFD00DB64A6 /* BarTintColorProvider.swift in Sources */,
+				5D4997DE202DFACB00770FC6 /* ThumbTintColorProvider.swift in Sources */,
 				7B41D8451F5424F60059C4F1 /* LoaderProtocol.swift in Sources */,
 				5534D9EB1DACD971009BF4D9 /* ImageProvider.swift in Sources */,
 				7BF4AAF51F56E2B3008D2003 /* StyleVariables.swift in Sources */,
@@ -796,6 +803,7 @@
 				5D8134821F59725200E7BDCD /* BorderWidthProviderTests.swift in Sources */,
 				5D8134861F59725200E7BDCD /* DividerImageProviderTests.swift in Sources */,
 				5D81347F1F59725200E7BDCD /* BackIndicatorImageProviderTests.swift in Sources */,
+				5D4997E0202DFBCD00770FC6 /* ThumbTintColorProviderTests.swift in Sources */,
 				5D81349A1F59725200E7BDCD /* TranslucentProviderTests.swift in Sources */,
 				5D8134911F59725200E7BDCD /* SeparatorColorProviderTests.swift in Sources */,
 				7B8377961E00524700558921 /* _BaseProviderTests.swift in Sources */,

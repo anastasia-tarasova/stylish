@@ -6,8 +6,6 @@
 //  Copyright © 2018 DSR. All rights reserved.
 //
 
-import Foundation
-
 import XCTest
 
 @testable import SwiftStylish

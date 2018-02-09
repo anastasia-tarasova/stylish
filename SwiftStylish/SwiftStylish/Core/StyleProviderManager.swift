@@ -52,6 +52,7 @@ enum StyleItemKeys: StyleItemKey
     case font = "font"                                      // FontProvider
     case shadow = "shadow"                                  // ShadowProvider
     case tintColor = "tint-color"                           // TintColorProvider
+    case thumbTintColor = "thumb-tint-color"                // ThumbTintColorProvider
     case barTintColor = "bar-tint-color"                    // BarTintColorProvider
     case backIndicatorImage = "back-indicator-image"        // BackIndicatorImageProviderTests
     case trackTintColor = "track-tint-color"                // ProgressViewProviderProtocol
@@ -168,5 +169,6 @@ extension StyleProviderManager
         registerKey(key: StyleItemKeys.progressTintColor.rawValue, withProvider: ProgressTintColorProvider())
         registerKey(key: StyleItemKeys.trackTintColor.rawValue, withProvider: TrackTintColorProvider())
         registerKey(key: StyleItemKeys.badgeColor.rawValue, withProvider: BadgeColorProvider())
+        registerKey(key: StyleItemKeys.thumbTintColor.rawValue, withProvider: ThumbTintColorProvider())
     }
 }
